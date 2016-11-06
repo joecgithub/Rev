@@ -21,11 +21,11 @@ hard_level = """When you're trying to solve some coding problem, often you'll\n 
 hard_correct_answers = ["class", "inheritance", "parent", "child"]
 
 # This function checks for the exact match (no punctuation) of the blank and its place in the level paragraph.
-#def match_blanks(match, blanks):
-#    for same in blanks:
-#        if same in match:
-#            return same
-#    return None
+def match_blanks(match, blanks):
+    for same in blanks:
+        if same in match:
+            return same
+    return None
 
 
 # function_one prompts user to input a level selection -- easy/medium/hard.
