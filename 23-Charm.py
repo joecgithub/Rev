@@ -1,4 +1,5 @@
-# Added a branch comment
+# Check 1
+# Check 2
 
 blanks = ["__1__", "__2__", "__3__", "__4__"]
 easy_level = """What manipulates __1__. It
