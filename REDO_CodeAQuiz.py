@@ -1,3 +1,20 @@
+# Based on SENT_REDO_CodeAQuiz.py, which ends with Code 0 if answer_input is correct, meaning, I assume, that it's
+#  just returning "guess" without doing anything more. If answer_input is not correct, SENT_REDO goes back to "Choose
+#  a game..." because, I assume, it's then seeing "return function_two()".
+
+# This file REDO_CodeAQuiz.py, prints "Okay!" if answer_input is in answers, correctly, as function_three here wants,
+#  & "Wrong!" FOUR TIMES if answer_input is not in answers.
+#  Also, if answer_input is in answers, but is not "information", which is what should go in blank 1, prints "Wrong!"
+#  for each index that the answer_input is wrong for but "OKAY!" for where it is right.
+#  Also, whereas it exits (with Code 0, or just disappears if opened not here but from a command line) when it gets a
+#  correct answer (either first time with one "Okay!" when "information" is input or with correct answer surrounded
+#  by "Wrong!"s when input is in answers but is not "information"), when answer is not in answers, it goes back to
+#  function_two. When answer_input for question 1 is not "information" but is in answers, it prints only as many wrongs
+#  for the indices before it only, then the input answer, then "Okay!", then quits.
+#  Debugging shows that when answer_input is "Information", this code goes to "return answer_input" then ends. If not,
+#  it goes to the "elif" and prints "Wrong!" for each blank where answer is wrong for, then goes to the first
+#  "return function_two()" statement, outputting another "Choose a game...".
+# This is saved as 19th-Charm.py.
 
 blanks = ["__1__", "__2__", "__3__", "__4__"]
 easy_level = """What is a computer? How does it do so many things? A computer\n
