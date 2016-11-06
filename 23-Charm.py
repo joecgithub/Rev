@@ -57,7 +57,7 @@ def function_one():
 
 def function_two():
     level, answers = function_one()
-    guess, correct_answer = function_three(str, str)
+    # guess, correct_answer = function_three(str, str)
     level = level.split()
     for match in level:
         switch = match_blanks(match, blanks)
