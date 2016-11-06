@@ -63,8 +63,8 @@ def function_two():
         switch = match_blanks(match, blanks)
         if switch != None:
             answer_input = raw_input("What should be substituted in " + switch + " ?")
-            if answer_input == guess:
-                print "Good!"
+            # if answer_input == guess:
+            #    print "Good!"
             return function_three(str, str)
 
 
